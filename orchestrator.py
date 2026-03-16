@@ -23,8 +23,8 @@ PROMPTS_DIR = Path(__file__).parent / "prompts"
 
 
 def load_persona(platform: str) -> str:
-    mapping = {"x": "persona_x.txt", "reddit": "persona_reddit.txt"}
-    path = PROMPTS_DIR / mapping.get(platform, "persona_x.txt")
+    mapping = {"x": "persona_x.md", "reddit": "persona_reddit.txt"}
+    path = PROMPTS_DIR / mapping.get(platform, "persona_x.md")
     return path.read_text(encoding="utf-8")
 
 
@@ -51,7 +51,7 @@ def build_user_prompt(platform: str, topic: str, tone: str,
         lines.append(f"  Contexto do post original: {topic}")
         lines.append(f"  Tom desejado: {tone}")
         lines.append("\nInstruções:")
-        lines.append("- Comece agregando valor genuíno. Mencione o PlanoEdu APENAS se for naturalmente relevante.")
+        lines.append("- Não mencione nenhum produto ou serviço. Foco exclusivo em agregar valor à discussão.")
         lines.append("- Comprimento ideal: 3–6 parágrafos.")
         lines.append("- Use formatação Reddit básica quando útil.")
 
