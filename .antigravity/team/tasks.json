@@ -1,0 +1,102 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Definir estrutura de pastas e contratos de m\u00f3dulo",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Arquiteto",
+      "dependencies": [],
+      "created_at": "2026-03-16T15:45:14.154339",
+      "updated_at": "2026-03-16T15:56:13.091874"
+    },
+    {
+      "id": 2,
+      "title": "Orchestrator b\u00e1sico \u2014 trigger, contexto, Claude API",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        1
+      ],
+      "created_at": "2026-03-16T15:45:14.155605",
+      "updated_at": "2026-03-16T15:56:13.193765"
+    },
+    {
+      "id": 3,
+      "title": "Prompts de persona: X e Reddit",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        1
+      ],
+      "created_at": "2026-03-16T15:45:14.156013",
+      "updated_at": "2026-03-16T15:55:50.363353"
+    },
+    {
+      "id": 4,
+      "title": "Bot Telegram \u2014 fila de aprova\u00e7\u00e3o (aprovar/rejeitar/regerar)",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        2,
+        3
+      ],
+      "created_at": "2026-03-16T15:45:14.156436",
+      "updated_at": "2026-03-16T15:55:50.455160"
+    },
+    {
+      "id": 5,
+      "title": "Publisher X \u2014 post simples e thread via X API v2",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        4
+      ],
+      "created_at": "2026-03-16T15:45:14.156882",
+      "updated_at": "2026-03-16T15:55:50.585736"
+    },
+    {
+      "id": 6,
+      "title": "Publisher Reddit \u2014 coment\u00e1rio em post existente via PRAW",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        4
+      ],
+      "created_at": "2026-03-16T15:45:14.157360",
+      "updated_at": "2026-03-16T15:55:50.692187"
+    },
+    {
+      "id": 7,
+      "title": "Storage SQLite \u2014 schema de logs e hist\u00f3rico",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        1
+      ],
+      "created_at": "2026-03-16T15:45:14.158023",
+      "updated_at": "2026-03-16T15:55:50.788235"
+    },
+    {
+      "id": 8,
+      "title": "Revis\u00e3o de seguran\u00e7a: credenciais, rate limits, auditabilidade",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Neo",
+      "dependencies": [
+        5,
+        6,
+        7
+      ],
+      "created_at": "2026-03-16T15:45:14.158558",
+      "updated_at": "2026-03-16T15:55:50.892929"
+    }
+  ],
+  "members": []
+}
