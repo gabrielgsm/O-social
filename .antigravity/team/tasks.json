@@ -141,6 +141,28 @@
         15
       ],
       "created_at": "2026-03-17T11:25:43.700885"
+    },
+    {
+      "id": 13,
+      "title": "Prot\u00f3tipo 3D: Cena B\u00e1sica (Three.js + React Three Fiber)",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "XR Developer",
+      "dependencies": [
+        9
+      ],
+      "created_at": "2026-03-17T11:42:58.526681"
+    },
+    {
+      "id": 14,
+      "title": "Integra\u00e7\u00e3o 3D: HUD do Dashboard no Metaverso",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Frontend/Next.js",
+      "dependencies": [
+        17
+      ],
+      "created_at": "2026-03-17T11:42:58.595496"
     }
   ],
   "members": []
