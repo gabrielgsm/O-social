@@ -138,6 +138,13 @@ def get_recent_drafts(platform: str, limit: int = 10) -> List[str]:
         return [r["draft"] for r in rows]
 
 
+def list_posts_by_status(status: str) -> List[dict]:
+    """Retorna todos os posts com um status específico."""
+    with get_conn() as conn:
+        rows = conn.execute("SELECT * FROM posts WHERE status = ? ORDER BY created_at DESC", (status,)).fetchall()
+        return [dict(r) for r in rows]
+
+
 # ─── Engajamento ──────────────────────────────────────────────────────────────
 
 def record_engagement(post_id: int, likes: int, retweets: int, comments: int):

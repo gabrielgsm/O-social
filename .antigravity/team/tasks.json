@@ -96,6 +96,51 @@
       ],
       "created_at": "2026-03-16T15:45:14.158558",
       "updated_at": "2026-03-16T15:55:50.892929"
+    },
+    {
+      "id": 9,
+      "title": "Arquitetura do Dashboard (Next.js + Tailwind)",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Frontend/Next.js",
+      "dependencies": [
+        1
+      ],
+      "created_at": "2026-03-17T11:25:43.526687"
+    },
+    {
+      "id": 10,
+      "title": "Setup do projeto Next.js na pasta /dashboard",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Frontend/Next.js",
+      "dependencies": [
+        13
+      ],
+      "created_at": "2026-03-17T11:25:43.583916"
+    },
+    {
+      "id": 11,
+      "title": "Endpoints de API para Auditoria (FastAPI/Flask)",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Backend",
+      "dependencies": [
+        7
+      ],
+      "created_at": "2026-03-17T11:25:43.638278"
+    },
+    {
+      "id": 12,
+      "title": "UI: Lista de Rascunhos e Status de Publica\u00e7\u00e3o",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Frontend/Next.js",
+      "dependencies": [
+        14,
+        15
+      ],
+      "created_at": "2026-03-17T11:25:43.700885"
     }
   ],
   "members": []
